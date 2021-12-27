@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./panels.css">
+    <link rel="stylesheet" href="./plotter.css">
+    <link rel="stylesheet" href="./playground.css">
+    <link rel="stylesheet" href="./circuitsDrawing.css">
+    <title>Circuits drawing</title>
+</head>
+<body style="margin: 0; width: 100%; height: 100%;">
+    <!-- <div id="contextMenu">
+        <div class="contextMenuElem"><p>Change color</p><p>shift+c</p></div>
+        <div class="contextMenuElem"><p>Delete</p><p>Del</p></div>
+    </div> -->
+    <canvas id="cvs"></canvas>
+    <div id="playground" style="position: absolute; width: 100%; height: 100%; pointer-events: none;"></div>
+    <div id="addPanel">
+        <div class="addPanelItem addPanelItemTop" id="addLamp">Lampes</div>
+        <div class="addPanelItem" id="addResistor">Résistance</div>
+        <div class="addPanelItem" id="addCapacitor">Condensateur</div>
+        <div class="addPanelItem addPanelItemBottom" id="addCoil">Bobine</div>
+
+        <div class="addPanelSpacer"></div>
+
+        <div class="addPanelItem addPanelItemTop" id="addVoltageSupply">Tension</div>
+        <div class="addPanelItem addPanelItemBottom" id="addCurrentSupply">Courant</div>
+
+        <div class="addPanelSpacer"></div>
+        
+        <div class="addPanelItem addPanelItemTop" id="addWire">Fil</div>
+        <div class="addPanelItem addPanelItemBottom" id="addHub" contextmenu="mymenu">Hub</div>
+    </div>
+    <script src="./panels.js"></script>
+    <script src="./plotter.js"></script>
+    <script src="./arithmeticParser.js"></script>
+    <script src="./wiring.js"></script>
+    <script src="./circuitsComponents.js"></script>
+    <script src="./circuitsDrawing.js"></script>
+    <script src="./js/neutralino.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

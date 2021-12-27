@@ -1,0 +1,10 @@
+._graphRoot
+{
+    height: 100%;
+}
+
+._graphRoot > p
+{
+    color: white;
+    text-align: center;
+}
